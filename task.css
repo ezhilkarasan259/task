@@ -1,0 +1,69 @@
+body  {
+   background-color: rgb(0, 0, 0);
+   margin: 0px;
+   height: auto;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+}
+
+.frame  {
+    margin: 1rem;
+    height: 600px;
+    width: 1150px; 
+    background-image: url("bg-cover.jpg");
+}
+.upframe {
+    height: 27%;
+    width: 100%;
+    display: flex; 
+    justify-content: space-evenly;
+}
+.up {
+  padding: 10px;
+  height: 90%;
+  width: 95%;
+  font-size: large;
+  font-style: oblique;
+  color:rgb(100, 40, 3);
+}
+
+.downframe {
+    height: 73%;
+    width: 100%;
+}
+#container {
+    position: relative;
+    width: 80%;
+    height: 380px;  
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+  } 
+  .contain {
+    height: 80%;
+    width: 26%;
+    aspect-ratio: 3/3;
+    margin: 35px;
+    display: inline-block;
+    scroll-snap-align: end;
+    scroll-margin-right: 20px;
+  }
+  .contain:active {
+    background-image: url("wheel-bg.jpg");
+    height: 93%;
+    width: 32%; 
+    margin: 7px;
+  }
+  .wheel {
+    margin: 0 25px 10PX  25px;
+    height: 60%; 
+    width: 80%;
+  }
+  .wheel2 {
+    height: 30%; 
+    width: 100%;
+    text-align: center;
+  }
